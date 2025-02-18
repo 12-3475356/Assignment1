@@ -1,0 +1,30 @@
+// Zomato food ordering sysytem
+#include<stdio.h>
+#include<stdlib.h>
+void order_placed()
+{printf("Congratulations!!! your order is placed successfully\n***please wait for some time***\n");}
+void preparing_food()
+{ printf("Your food is being prepared...\n");}
+void out_for_delivery()
+{printf("Your food is out for delivery...we will reach you soon\n ");}
+void delivery()
+{printf("Your order is delivered ..enjoy the food....please give feedback\n");}
+
+void main(){
+    int choice;
+    while(1){
+        printf("\n\nEnter the services(1-4)\n1)order placed\n2)preparing food\n3)out for delivery\n4)delivered\n");
+        scanf("%d",&choice);
+        switch(choice){
+            case 1:order_placed();
+            break;
+            case 2:preparing_food();
+            break;
+            case 3:out_for_delivery();
+            break;
+            case 4:delivery();
+            break;
+            default: exit(0);
+        }
+    }
+}
